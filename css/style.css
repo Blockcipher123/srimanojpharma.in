@@ -211,11 +211,12 @@ input.submitbutton.ripplelink {
     height: 220px;
 }
 
+
 @media (max-width: 992px){
     .map{
         /*padding-left: 30px;*/
         /*align-items: center;*/
-        width: 380px;
+        width: 250px;
     }
 }
 
@@ -254,4 +255,8 @@ input.submitbutton.ripplelink {
 
 .selector-for-some-widget {
   box-sizing: content-box;
+}
+
+.add-img{
+    background-image: url('image/bg.jpg');
 }
