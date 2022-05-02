@@ -112,7 +112,7 @@
 <!-- <header> -->
 	<!-- slide -->
 	<div class="carousel">
-	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+	<div id="carouselExampleCaptions" class="carousel" data-bs-ride="carousel">
 	  <div class="carousel-inner">
 	  
 	  <div class="carousel-inner">
@@ -138,12 +138,11 @@
 	      </div>
 	    </div>
 
-		<!--
 	    <div class="carousel-item">
 	      <img src="image/image crousel galary/1.jpeg" class="d-block w-100">
 	      <div class="carousel-caption d-none d-md-block">
 	      </div>
-	    </div>-->
+	    </div>
 
 	    <div class="carousel-item">
 	      <img src="image/image crousel galary/bg2.jpg" class="d-block w-100">
@@ -183,7 +182,7 @@
 	<main>
 		<!-- owenr detail -->
 		<div>
-			<div class='my-2'>
+			<div >
 				<h4 style="text-align:center;">  <span style="color: red;">Owner</span> <img class="owner-img" src="image/IMG_20180415_182458.jpg"> </h4>
 
 			</div>
@@ -238,7 +237,6 @@
 								<li><a href="about-terms-and-conditions.php">Terms & Conditions</a></li>
 							</ul>
 						</div>
-
 					</div>
 					<!-- quick links end here-->
 					<!--  social media widget -->
