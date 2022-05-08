@@ -409,6 +409,47 @@ input.submitbutton.ripplelink {
 }
 
 
+@media (max-width: 992px) {
+    .slider-bottom{
+        /*display: initial;*/
+        display: initial;
+    }
 
-/*W3 school Csss*/
 
+}
+
+.button-slider{
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+    .button-slider{
+            display: inline;
+    
+    }
+}
+
+.new-prev{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 2px 2px 0;
+    user-select: none;
+}
+@media (max-width: 992px){
+
+
+    
+    .new-prev:hover{
+        color: white;
+        background-color: black;
+    }
+}
