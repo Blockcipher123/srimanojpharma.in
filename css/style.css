@@ -365,6 +365,13 @@ input.submitbutton.ripplelink {
         /*align-items: center;*/
         width: 250px;
     }
+
+    .owner-img{
+        /*display: initial;*/
+        height: 300px;
+        width: 360px;
+    }
+
 }
 
 .copyright {
@@ -378,12 +385,16 @@ input.submitbutton.ripplelink {
     height: 70px;
     width: 120px;
     padding-top: 8px;
+
+
+    /*display: none;*/
+
 }
 
-.owner-img:hover {
+/*.owner-img:hover {
     height: 300px;
     width: 400px;
-}
+}*/
 
 .new_nav ul li: :after {
     content: '';
