@@ -436,9 +436,14 @@ input.submitbutton.ripplelink {
 
 @media (max-width: 992px) {
     .button-slider{
-            display: inline;
+        display: inline;
+    
     
     }
+    .button-slider{
+        display: 
+    }
+
 }
 
 .new-prev{
@@ -463,4 +468,5 @@ input.submitbutton.ripplelink {
         color: white;
         background-color: black;
     }
+
 }
