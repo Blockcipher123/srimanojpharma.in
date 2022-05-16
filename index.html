@@ -288,7 +288,7 @@
     </div>
 </nav>
 <marquee width="100%" direction="right" style="color:red;background-color: #FFDDDD" behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();">
-    <h5><a href="trade-mark.pdf" style="color:red; text-decoration: none;" target="_blank">Trade Mark Registered</a></h5>
+    <h5><a href="trade-mark.pdf" style="color:red;" target="_blank">Trade Mark Registered</a></h5>
 </marquee>
 
 <body>
@@ -296,7 +296,7 @@
     <!-- slide -->
     <div style="background-color: #FFDDDD">
         <div class="carousel">
-            <div id="carouselExampleCaptions" class="carousel" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel-slider" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-inner">
                         <div class="carousel-item active mySlides">
@@ -510,32 +510,38 @@
 </body>
 <!-- js -->
 <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
     }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+    $('.carousel').carousel({
+        interval: true,
+    });
+
+
+
 </script>
 
 </html>
